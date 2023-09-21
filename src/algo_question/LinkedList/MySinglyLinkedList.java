@@ -24,6 +24,18 @@ public class MySinglyLinkedList {
 
     }
 
+    void printNodes(){
+        Node current=head;
+        while(current!=null){
+            if (current.next==null) System.out.println(current.id+"=> null");
+            else {
+                System.out.print(current.id+"=> ");
+            }
+            current=current.next;
+        }
+    }
+
+
     public void deleteNodesInPattern(int m, int n) {
         Node current = head;
         Node prev = null;
