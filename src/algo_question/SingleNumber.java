@@ -30,12 +30,11 @@ public class SingleNumber {
     public static void main(String[] args) {
         // Example 1
         int[] nums1 = {2, 2, 3};
-        int output1 = singleNumber(nums1);
-        System.out.println("Example 1 Output: " + output1); // Output: 1
+        System.out.println("Example 1 Output: " + singleNumber(nums1)); // Output: 1
         System.out.println("Example 1 Output: " + singleNumber1(nums1)); // Output: 1
-
-
     }
+
+    // Solution 2
     public static int singleNumber1(int[] nums) {
         List<Integer> numList = new ArrayList<>();
 
@@ -49,6 +48,7 @@ public class SingleNumber {
         return numList.get(0);
     }
 
+//Solution 1
     public static int singleNumber(int[] nums) {
         Set<Integer> seenNumbers = new HashSet<>();
         for (int num : nums) {
