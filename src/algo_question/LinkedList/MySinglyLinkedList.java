@@ -38,7 +38,7 @@ public class MySinglyLinkedList {
 
     public void deleteNodesInPattern(int m, int n) {
         Node current = head;
-        Node prev = null;
+        Node prev = head;
 
         while (current != null) {
             // Keep the first m nodes

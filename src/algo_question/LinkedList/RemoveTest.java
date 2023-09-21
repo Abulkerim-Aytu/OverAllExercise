@@ -9,7 +9,7 @@ public class RemoveTest {
         }
 
         nodeList.printNodes();
-        nodeList.deleteNodesInPattern(1,3);
+        nodeList.deleteNodesInPattern(2,3);
         nodeList.printNodes();
 
 
