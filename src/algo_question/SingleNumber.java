@@ -29,6 +29,7 @@ public class SingleNumber {
         int[] nums1 = {2, 2, 3};
         System.out.println("Example 1 Output: " + singleNumber(nums1)); // Output: 1
         System.out.println("Example 1 Output: " + singleNumber1(nums1)); // Output: 1
+        System.out.println("Example 1 Output: " + singleNumber3(nums1)); // Output: 1
     }
     //Solution 3
     public static int singleNumber3(int[] nums) {
