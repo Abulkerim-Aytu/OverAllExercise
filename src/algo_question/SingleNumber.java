@@ -21,10 +21,7 @@ Question-1 Single Number
         Follow-up question: Can you implement a solution with a linear runtime complexity and use only constant extra space?
 */
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SingleNumber {
     public static void main(String[] args) {
@@ -32,6 +29,22 @@ public class SingleNumber {
         int[] nums1 = {2, 2, 3};
         System.out.println("Example 1 Output: " + singleNumber(nums1)); // Output: 1
         System.out.println("Example 1 Output: " + singleNumber1(nums1)); // Output: 1
+    }
+    //Solution 3
+    public static int singleNumber3(int[] nums) {
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
+        // Populate the frequency map
+        for (int num : nums) {
+            frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
+        }
+        // Find and return the element with a frequency of 1 (the single number)
+        for (int num : nums) {
+            if (frequencyMap.get(num) == 1) {
+                return num;
+            }
+        }
+        // Return -1 if no single number is found (this should not happen in this problem)
+        return -1;
     }
 
     // Solution 2
