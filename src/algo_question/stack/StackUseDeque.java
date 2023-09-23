@@ -40,7 +40,10 @@ public class StackUseDeque{
         }
 
 
-        public static int climbStairs1(int n) {
+
+    //Approach 2: Memoization
+
+    public static int climbStairs1(int n) {
             Map<Integer, Integer> memo = new HashMap<>();
             return climbStairs1(n, memo);
         }
@@ -54,6 +57,9 @@ public class StackUseDeque{
             }
             return memo.get(n);
         }
+
+
+
 
 
 }
