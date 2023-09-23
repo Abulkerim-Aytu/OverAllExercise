@@ -22,6 +22,9 @@ You are climbing a staircase. It takes n steps to reach the top.
         3. 2 steps + 1 step
 */
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class StackUseDeque{
     public static void main(String[] args) {
 
@@ -35,5 +38,22 @@ public class StackUseDeque{
             }
             return climbStairs(n-1) + climbStairs(n-2);
         }
+
+
+        public static int climbStairs1(int n) {
+            Map<Integer, Integer> memo = new HashMap<>();
+            return climbStairs1(n, memo);
+        }
+
+        private static int climbStairs1(int n, Map<Integer, Integer> memo) {
+            if (n == 0 || n == 1) {
+                return 1;
+            }
+            if (!memo.containsKey(n)) {
+                memo.put(n, climbStairs1(n-1, memo) + climbStairs1(n-2, memo));
+            }
+            return memo.get(n);
+        }
+
 
 }
