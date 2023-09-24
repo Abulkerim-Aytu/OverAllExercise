@@ -1,4 +1,4 @@
-package iterator;
+package algo_beginner;
 
 public class Hello {
 }
