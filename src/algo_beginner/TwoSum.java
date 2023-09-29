@@ -20,14 +20,18 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]*/
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
+    public static void main(String[] args) {
+        int [] nums = {1,2,3,5,8,9,6,7};
+        System.out.println(Arrays.toString(twoSum(nums,5)));
+    }
 
     // solution 1
-    class Solution {
-        public int[] twoSum(int[] nums, int target) {
+        public static int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> numMap = new HashMap<>();
             int n = nums.length;
 
@@ -46,5 +50,5 @@ public class TwoSum {
 
             return new int[]{}; // No solution found
         }
-    }
+
 }
