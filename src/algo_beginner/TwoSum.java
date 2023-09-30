@@ -30,7 +30,7 @@ public class TwoSum {
         System.out.println(Arrays.toString(twoSum(nums,5)));
     }
 
-    // solution 1
+    // solution 1 (One-pass Hash Table)
     public static int[] twoSumOptimalSolution(int[] array, int targetValue){
         // Complexity of the solution is O(n) but I have space complexity of O(n)
         // create hashmap
@@ -44,7 +44,7 @@ public class TwoSum {
         return new int[]{};
     }
 
-    // solution 2
+    // solution 2 (Two-pass Hash Table)
         public static int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> numMap = new HashMap<>();
             int n = nums.length;
