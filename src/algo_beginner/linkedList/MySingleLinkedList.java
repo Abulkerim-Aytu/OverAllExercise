@@ -20,6 +20,19 @@ public class MySingleLinkedList {
         size++;
     }
 
+    public Integer getKthItemFromLast (int k){
+        // create two pointers
+
+
+        // move ptr2 k-1 times
+
+        // move both pointers until ptr2 hits the last element
+
+        // ptr1 is on the kth element from the last
+
+        return null;
+    }
+
 
 
 }
