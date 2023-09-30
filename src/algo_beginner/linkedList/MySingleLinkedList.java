@@ -20,6 +20,25 @@ public class MySingleLinkedList {
         size++;
     }
 
+    void printNodes(){
+        Node current = head;
+        while (current!=null){
+            System.out.println(current.id);
+            current=current.next;
+        }
+    }
+//    void printNodes(){
+//        Node current=head;
+//        while(current!=null){
+//            if (current.next==null) System.out.println(current.id+"=> null");
+//            else {
+//                System.out.print(current.id+"=> ");
+//            }
+//            current=current.next;
+//        }
+//    }
+
+
     public Integer getKthItemFromLast (int k){
         // create two pointers
 

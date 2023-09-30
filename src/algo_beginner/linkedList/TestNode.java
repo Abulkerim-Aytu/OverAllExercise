@@ -10,6 +10,8 @@ public class TestNode {
             myList.addFirst(array[i]);
         }
 
+        myList.printNodes();
+
 
     }
 
