@@ -3,7 +3,7 @@ package algo_beginner;
 import java.util.HashMap;
 import java.util.HashSet;
 
-class Solution {
+class ContainsDuplicate {
 
     // Hash Set
     public boolean containsDuplicate(int[] nums) {
